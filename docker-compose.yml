@@ -1,9 +1,10 @@
 version: '2'
 
 services:
-  web:
+  laravel-docker:
     build: .
     image: scortum/laravel
+    container_name: laravel-docker
     ports:
       - "3000:3000"
     volumes:
