@@ -108,6 +108,7 @@ RUN apt-get install -y nodejs && \
 
 COPY container-content/init.sh  /
 COPY container-content/entry.sh /
+COPY container-content/add-user-and-su.sh /
 
 WORKDIR "/app"
 CMD ["/entry.sh"]
