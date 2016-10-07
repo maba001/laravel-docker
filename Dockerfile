@@ -73,9 +73,8 @@ RUN apt-get install -y nodejs && \
     /usr/bin/npm install -g gulp && \
     /usr/bin/npm install -g bower
 
-COPY container-content/init.sh \
-     container-content/entry.sh \
-     /
+COPY container-content/init.sh  /
+COPY container-content/entry.sh /
 
 WORKDIR "/app"
 CMD ["/entry.sh"]
