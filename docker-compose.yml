@@ -1,14 +1,16 @@
 version: '2'
 
 services:
-  laravel-docker:
+  laravel-web:
     build: .
-    image: scortum/laravel
-    container_name: laravel-docker
+    image: herrphon/laravel
+    container_name: laravel
     ports:
       - "3000:3000"
     volumes:
       - ./app:/app
+    environment:
+      USER: "${USER}"
     entrypoint: "composer --ansi"
     command: "install"
     
