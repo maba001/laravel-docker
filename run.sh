@@ -2,5 +2,5 @@
 
 docker run -it --rm  \
            -v $(pwd)/app:/app  \
-           scortum/laravel $@
+           herrphon/laravel $@
 
