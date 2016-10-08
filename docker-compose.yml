@@ -7,11 +7,11 @@ services:
     container_name: laravel
     ports:
       - "3000:3000"
+      - "8000:8000"
     volumes:
       - ./app:/app
     environment:
       USER: "${USER}"
-    entrypoint: "composer --ansi"
-    command: "install"
+      OSX: ${_system_name} 
     
 

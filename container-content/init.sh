@@ -3,7 +3,7 @@
 cd /app
 
 if [ ! -d "/app/vendor" ]; then
-  composer install
+  composer install --ansi
 else
   echo "Directory '/app/vendor' already exists - skipping 'composer install'"
 fi
